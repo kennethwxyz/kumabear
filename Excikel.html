@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Owner Profile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img-container">
+            <img src="https://graph.facebook.com/100049456655701/picture?height=300&width=300&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662" alt="Photo profile">
+        </div>
+        <p class="full-name">Excikel</p>
+        <p class="role">Bot Developer</p>
+        <p class="description">
+            Hi there! Call me Excikel, I am a Bot Developer and I want to Improve my Skills so please support me
+        </p>
+        <div class="social-container">
+             <button><i class="fab fa-facebook"></i></button>
+        </div>
+    </div>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-size: 14px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    background-color: black;
+    width: 220px;
+    height: 220px;
+    padding: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: width 0.4s, height 0.4s,
+        border-radius 0.4s;
+}
+
+.container:hover {
+    width: 340px;
+    height: 440px;
+    border-radius: 4px;
+}
+
+.img-container {
+    width: 170px;
+    height: 170px;
+    min-height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.2);
+}
+
+.img-container img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.full-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+.role,
+.description {
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.role {
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #ffbe44;
+}
+
+.social-container {
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-container button {
+    border: none;
+    outline: none;
+    color: blue;
+    background: none;
+    width: 20px;
+    height: 40px;
+    font-size: 1.7em;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.container:hover .social-container button {
+    transform: translateX(60px);
+    transition-delay: 0.3s;
+}
+
+.container:hover .social-container button:nth-child(2) {
+    transition-delay: 0.5s;
+}
+
+.container:hover .social-container button:nth-child(3) {
+    transition-delay: 0.7s;
+}
+
+  </style>
+    
+</body>
+</html>
+<script>
